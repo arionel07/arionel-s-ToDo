@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="todo__app">
+        <h1>Arionel's ToDo List</h1>
+        <div class="input">
+            <input id="input" class="add__input" type="text" placeholder="Add your task">
+            <button class="button btn-add">Add</button>
+            <div class="error hidden">Введите текст задачи</div>
+            <div class="select">
+                <select name="todos" id="select" class="filter__todo">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="active">Active</option>
+                </select>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="menu">
+            </ul>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
